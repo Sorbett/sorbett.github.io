@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "ZHaoyang Ye"
+title                    : "Zhaoyang Ye"
 title_separator          : "-"
 name                     : &name "Zhaoyang Ye"
 description              : &description "personal description"
