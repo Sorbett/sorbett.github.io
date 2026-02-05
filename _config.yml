@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "ZHaoyang Ye"
 title_separator          : "-"
 name                     : &name "Zhaoyang Ye"
-description              : &description "I am an AI Researcher and Algorithm Engineer focused on pushing the boundaries of Large Language Models and RAG systems. Currently pursuing my degree at South China University of Technology, I have spearheaded projects in automated LLM evaluation, visual RAG optimization, and intelligent agent development. My work focuses on bridging the gap between complex unstructured data and actionable insights."
+description              : &description "personal description"
 url                      : https://sorbett.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sorbett/sorbett.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Zhaoyang Ye"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "ALgorithm Engineer"
+  location         : "China"
+  employer         : "A"
   uri              : # URL
-  email            : "sorbet111@163.com" 
+  email            : "zhaoyang.scott.ye@gmail.com" 
 
   # Academic websites
   academia         : # URL
