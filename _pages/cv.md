@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 <!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected) -->
-<!-- * M.S. in Jekyll, GitHub University, 2014 -->
+* M.S. in Smart Industries and Digital Transformation, National University of Singapore, 2026-2027
 * B.S. in Information and Computing Science, South China University of Technology, 2021-2025
 <!-- 
 Work experience
