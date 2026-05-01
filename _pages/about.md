@@ -10,7 +10,7 @@ redirect_from:
 I am currently an Algorithm Engineer at a startup based in the San Francisco Bay Area. Before that, I earned my Bachelor’s degree in Information and Computing Science from South China University of Technology in 2025, where I was fortunate to be advised by Prof. [Li (Charlie) Xia](https://scholar.google.com/citations?hl=en&user=e1GOPw0AAAAJ).
 
 - My current work focuses on building robust Agent Infrastructure in Frictionless Compute, like robust RAG systems and Agent Memory, bridging the gap between complex unstructured data and actionable insights.
-- My research interests also lie in Edge AI Model.
+- My research interests also lie in ML Systems and Edge AI Model.
 - Previously, I focused on Multimodal Learning and LLM Explainability.
 
 Education
