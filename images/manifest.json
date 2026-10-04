@@ -1,15 +1,13 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "Zhaoyang Ye",
 	"icons": [
 		{
-			"src": "/images/favicon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
+			"src": "https://avatars.githubusercontent.com/u/123789789?s=192&v=4",
+			"sizes": "192x192"
 		},
 		{
-			"src": "/images/favicon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
+			"src": "https://avatars.githubusercontent.com/u/123789789?s=512&v=4",
+			"sizes": "512x512"
 		}
 	]
 }

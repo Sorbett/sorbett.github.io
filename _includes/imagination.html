@@ -1,0 +1,31 @@
+<dialog id="imagination-dialog" class="lyrics-dialog" aria-labelledby="imagination-title">
+  <div class="lyrics-dialog-header">
+    <h2 id="imagination-title">Pure Imagination</h2>
+    <form method="dialog"><button type="submit" aria-label="Close lyrics">×</button></form>
+  </div>
+  <div id="lyrics-scroll" class="lyrics-verses" tabindex="0" aria-label="Pure Imagination lyrics">
+    <p class="lyrics-label">[Verse 1]</p>
+    <p class="lyrics-stanza">Come with me and you'll be<br>
+      In a world of pure imagination<br>
+      Take a look and you'll see<br>
+      Into your imagination</p>
+
+    <p class="lyrics-label">[Verse 2]</p>
+    <p class="lyrics-stanza">We'll begin with a spin<br>
+      Traveling in the world of my creation<br>
+      What we'll see will defy<br>
+      Explanation</p>
+
+    <p class="lyrics-label">[Chorus]</p>
+    <p class="lyrics-stanza">If you want to view paradise<br>
+      Simply look around and view it<br>
+      Anything you want to, do it<br>
+      Want to change the world?<br>
+      There's nothing to it</p>
+  </div>
+  <div class="lyrics-controls" hidden>
+    <button id="lyrics-play" type="button" aria-label="Play scrolling lyrics" aria-pressed="false"><svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M5 3 17 10 5 17Z"/></svg><span>Play</span></button>
+    <button id="lyrics-replay" type="button" aria-label="Replay scrolling lyrics" title="Replay">↺</button>
+    <span id="lyrics-status" role="status" aria-live="polite">Ready</span>
+  </div>
+</dialog>
