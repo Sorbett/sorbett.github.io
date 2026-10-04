@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Zhaoyang Ye"
   pronouns         : # example: "she/her"  
-  bio              : "Algorithm Engineer"
+  bio              : "Research Intern at NUS LV-Lab · Algorithm Engineer"
   location         : "Singapore"
   employer         : "National University of Singapore"
   uri              : # URL
@@ -75,6 +75,17 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+
+# Visitor map: add your site's ID from the d= parameter in the MapMyVisitors
+# embed code generated at https://mapmyvisitors.com/add for https://sorbett.github.io.
+# Leave blank to hide the widget until your site is registered.
+mapmyvisitors:
+  widget_id        : "D-qNhB3qlh9HU2nWxPcCmXlJ09imaNrUD145-STwU7g"
+  stats_url        : "https://mapmyvisitors.com/web/1c8n5"
+  counter          : "tt" # Total Pageviews (all time), from the provider's code generator.
+  land_color       : "000000"
+  ocean_color      : "ffffff"
+  text_color       : "475569"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

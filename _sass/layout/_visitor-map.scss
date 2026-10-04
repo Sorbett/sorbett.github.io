@@ -1,0 +1,25 @@
+/* Visitor map for pages using the original author profile. */
+
+.author__visitors {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-border-color);
+  max-width: 250px;
+
+  h3 {
+    margin: 0 0 0.75rem;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .author__visitors-map {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+

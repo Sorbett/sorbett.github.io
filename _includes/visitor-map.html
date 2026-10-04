@@ -1,0 +1,10 @@
+{% if site.mapmyvisitors.widget_id and site.mapmyvisitors.widget_id != "" %}
+  <section class="author__visitors" aria-label="All-time visitor map">
+    <h3>Visitors · All time</h3>
+    <div class="author__visitors-map">
+      <a href="{{ site.mapmyvisitors.stats_url | escape }}" title="Visit tracker">
+        <img src="https://mapmyvisitors.com/map.png?cl={{ site.mapmyvisitors.land_color | default: '000000' | escape }}&amp;w=a&amp;t={{ site.mapmyvisitors.counter | default: 'tt' | escape }}&amp;d={{ site.mapmyvisitors.widget_id | uri_escape | escape }}&amp;co={{ site.mapmyvisitors.ocean_color | default: 'ffffff' | escape }}&amp;ct={{ site.mapmyvisitors.text_color | default: '475569' | escape }}" alt="Visitor world map and total pageviews across all time" loading="lazy" width="300" height="190">
+      </a>
+    </div>
+  </section>
+{% endif %}

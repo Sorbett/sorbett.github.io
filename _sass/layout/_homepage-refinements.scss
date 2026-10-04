@@ -1,0 +1,78 @@
+/* Small refinements to the original Academic Pages layout. */
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/SourceSans3VF-Upright.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/SourceSans3VF-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+body {
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page__content {
+  line-height: 1.7;
+
+  h2 {
+    margin-top: 2.2rem;
+    padding-bottom: .55rem;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  li { margin-bottom: .65em; }
+  strong { font-weight: 600; }
+}
+
+.author__name { font-weight: 600; letter-spacing: -.01em; }
+.author__bio { line-height: 1.6; }
+
+.education-list { margin: 1.2rem 0 1.6rem; }
+.education-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  & + & { margin-top: 1.4rem; }
+  img {
+    flex: 0 0 84px;
+    width: 84px;
+    height: 64px;
+    object-fit: contain;
+  }
+  h3 {
+    margin: 0 0 .2rem;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  p { margin: 0; font-size: .9em; }
+  .education-date {
+    margin-top: .15rem;
+    font-size: .8em;
+    font-variant-numeric: tabular-nums;
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 600px) {
+  .education-row {
+    gap: .9rem;
+    img { flex-basis: 64px; width: 64px; height: 56px; }
+  }
+}
