@@ -38,7 +38,7 @@ I earned my Bachelor’s degree in Information and Computing Science from South 
 <div class="experience-list">
   <div class="experience-row">
     <p class="experience-date">2026.08 — Present</p>
-    <div><h3>Research Intern</h3><p><a href="https://www.lv-lab.org/nus/index.html">LV-Lab, National University of Singapore</a></p><p class="experience-location">Singapore</p></div>
+    <div><h3>Research Intern</h3><p>LV-Lab, National University of Singapore</p><p class="experience-location">Singapore</p></div>
   </div>
   <div class="experience-row">
     <p class="experience-date">2025.10 — Present</p>

@@ -5,6 +5,7 @@
     <div class="personal-visitors-map">
       <script id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=20262c&amp;w=a&amp;t=tt&amp;d={{ site.mapmyvisitors.widget_id | uri_escape | escape }}&amp;co=f3f5f7&amp;ct=5c6670&amp;cmo=697078&amp;cmn=20262c" defer></script>
     </div>
+    <p class="personal-visitors-note" hidden>Location data unavailable</p>
     <a class="personal-visitors-details" href="{{ site.mapmyvisitors.stats_url | escape }}">View visitor locations ↗</a>
   </section>
   {% else %}
