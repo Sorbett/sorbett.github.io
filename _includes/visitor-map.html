@@ -1,18 +1,28 @@
-{% if site.visitordots.map_url and site.visitordots.map_url != "" %}
+{% if site.mapmyvisitors.widget_id and site.mapmyvisitors.widget_id != "" %}
   {% if include.interactive %}
-    {% assign visitor_class = "personal-visitors" %}
-  {% else %}
-    {% assign visitor_class = "author__visitors" %}
-  {% endif %}
-  <section class="{{ visitor_class }}" aria-label="Visitor map">
+  {% assign visitor_past_color = "9299a1" %}
+  {% assign visitor_recent_color = "d96a65" %}
+  <section class="personal-visitors" aria-label="All-time visitor map" style="--visitor-past: #{{ visitor_past_color }}; --visitor-recent: #{{ visitor_recent_color }};">
     <h3>Visitors</h3>
-    <div class="{{ visitor_class }}-map">
-      <a href="{{ site.visitordots.stats_url | escape }}" aria-label="View visitor locations and statistics">
-        <img class="visitor-map-image" src="{{ site.visitordots.map_url | escape }}" alt="VisitorDots world map showing visitor locations" referrerpolicy="strict-origin-when-cross-origin" style="display:block;width:100%;max-width:800px;height:auto;border:0">
+    <div class="personal-visitors-map">
+      <img class="personal-visitors-fallback" src="{{ '/images/visitor-world.svg' | relative_url }}" alt="World map" width="900" height="441">
+      <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=20262c&amp;w=a&amp;t=tt&amp;d={{ site.mapmyvisitors.widget_id | uri_escape | escape }}&amp;co=f3f5f7&amp;cmo={{ visitor_past_color }}&amp;cmn={{ visitor_recent_color }}&amp;ct=5c6670"></script>
+    </div>
+    <ul class="personal-visitors-legend" aria-label="Visitor map legend">
+      <li><span class="visitor-past-dot" aria-hidden="true"></span>Past visits</li>
+      <li><span class="visitor-recent-dot" aria-hidden="true"></span>Recent visits</li>
+    </ul>
+    <p class="personal-visitors-note" hidden>Location data unavailable</p>
+    <a class="personal-visitors-details" href="{{ site.mapmyvisitors.stats_url | escape }}">View visitor locations ↗</a>
+  </section>
+  {% else %}
+  <section class="author__visitors" aria-label="All-time visitor map">
+    <h3>Visitors · All time</h3>
+    <div class="author__visitors-map">
+      <a href="{{ site.mapmyvisitors.stats_url | escape }}" title="Visit tracker">
+        <img src="https://mapmyvisitors.com/map.png?cl={{ site.mapmyvisitors.land_color | default: '000000' | escape }}&amp;w=a&amp;t={{ site.mapmyvisitors.counter | default: 'tt' | escape }}&amp;d={{ site.mapmyvisitors.widget_id | uri_escape | escape }}&amp;co={{ site.mapmyvisitors.ocean_color | default: 'ffffff' | escape }}&amp;ct={{ site.mapmyvisitors.text_color | default: '475569' | escape }}" alt="Visitor world map and total pageviews across all time" loading="lazy" width="300" height="190">
       </a>
     </div>
-    <p class="{{ visitor_class }}-note" hidden>Map could not load.</p>
-    <a class="{{ visitor_class }}-details" href="{{ site.visitordots.stats_url | escape }}">View visitor locations ↗</a>
-    <a class="{{ visitor_class }}-credit" href="{{ site.visitordots.credit_url | escape }}">Get a free visitor map like this</a>
   </section>
+  {% endif %}
 {% endif %}
