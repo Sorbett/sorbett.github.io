@@ -285,7 +285,6 @@
     }
     .jvectormap-zoomout { top: 34px; }
     .personal-visitors-details { display: inline-block; margin-top: 7px; color: var(--global-text-color-light); font-size: 15px; }
-    .personal-visitors-note { margin: 7px 0 0; color: var(--global-text-color-light); font-size: 15px; }
   }
   .jvectormap-tip { font-family: inherit; font-size: 16px; line-height: 1.3; color: var(--global-text-color); background: var(--global-bg-color); border-color: var(--global-border-color); }
   &[data-reader-theme="night"] .personal-visitors-fallback { filter: invert(1); }

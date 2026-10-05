@@ -94,7 +94,6 @@
 
   const visitors = document.querySelector('.personal-visitors');
   if (visitors) {
-    const locationNote = visitors.querySelector('.personal-visitors-note');
     const styleCounter = () => {
       const label = visitors.querySelector('.mapmyvisitors-visitors');
       if (!label) return;
@@ -102,19 +101,14 @@
       if (count) label.textContent = count[1].trim() + ' pageviews · all time';
       const mapContainer = visitors.querySelector('.jvectormap-container');
       const map = mapContainer && window.vmap_jq && window.vmap_jq(mapContainer).data('mapObject');
-      if (!map || !locationNote) return;
+      if (!map) return;
       const markers = Object.values(map.markers);
-      let unknown = 0;
       markers.forEach((marker) => {
         if (!/unknown location/i.test(marker.config.name || '')) return;
         // The provider places unknown locations at a fixed ocean coordinate.
         // Keep their pageviews in the total, but do not imply a real location.
         marker.element.shape.node.style.display = 'none';
-        unknown += 1;
       });
-      const message = unknown === markers.length ? 'Location data unavailable' : 'Some visits have no location data';
-      if (locationNote.textContent !== message) locationNote.textContent = message;
-      locationNote.hidden = unknown === 0;
     };
     new MutationObserver(styleCounter).observe(visitors, { childList: true, characterData: true, subtree: true });
     styleCounter();
